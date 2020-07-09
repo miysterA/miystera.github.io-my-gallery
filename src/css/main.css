@@ -1,0 +1,246 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif:wght@700&family=Poppins:wght@600&display=swap');
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: #FAFAFA;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* Gallery bloc */
+.gallery__header{
+    max-width: 900px;
+    margin: auto;
+}
+
+.author__picture{
+    text-align: center;
+}
+
+.author__img {
+    width: 40%;
+    border-radius: 38px;
+}
+
+.author__informations{
+    margin: 0.5rem 1rem 2rem 1rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #4E5150;
+    font-style: normal;
+}
+
+.author__name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.author_adress {
+    padding: .5rem;
+    font-size: 10px;
+    line-height: 12px;
+    color: #A9A9A9;
+}
+
+.author__socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 350px;
+    margin: auto;
+}
+
+.author__socials-display {
+    background-color: #E5E5E5;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    text-transform: capitalize;
+    width: 78px;
+    height: 52px;
+    padding: 0.5rem;
+}
+.author_adress{
+    padding: .5rem;
+}
+.gallery_content {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.4rem;
+    margin: auto;
+}
+
+.gallery__content-image{
+    border-radius: 20px;
+    height: 100%;
+}
+.gallery_content img:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.gallery_content img:nth-child(2){
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.gallery_content img:nth-child(3){
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+.gallery_content img:nth-child(4){
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+.gallery_content img:nth-child(5){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;    
+}
+.gallery_content img:last-child {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+/* Footer */
+footer.footer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 70px 0;
+    color: #A9A9A9;
+}
+
+.footer__paragraph{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #A9A9A9;
+}
+
+
+/*
+=============== 
+Responsive
+===============
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    .author__socials-display{
+        background-color: #E5E5E5;
+        border-radius: 16px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        text-transform: capitalize;
+        width: 100px;
+        height: 67px;
+        padding: 1rem;
+    }
+
+    .gallery_content {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        margin: auto;
+    }
+    .author__name{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+    .author__img{
+        width: 20%;
+        border-radius: 60px;
+    }
+    .author__adress{
+        color: #A9A9A9;
+        font-size: 14px;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .author__informations{
+        margin: 1rem 1rem 3rem 1rem;
+    }
+
+    .footer__paragraph{
+        font-size: 14px;
+    }
+}
+
+
+/* Small devices (portrait tablets and computer, 900px and up) */
+@media only screen and (min-width: 900px){
+    .author__socials-display{
+        background-color: #E5E5E5;
+        border-radius: 16px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        text-transform: capitalize;
+        width: 100px;
+        height: 67px;
+        padding: 1rem;
+    }
+
+    .gallery_content {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        margin: auto;
+    }
+    
+    .author__name{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+    .author__img{
+        width: 20%;
+        border-radius: 60px;
+    }
+    .author__adress{
+        color: #A9A9A9;
+        font-size: 14px;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .author__informations{
+        margin: 1rem 1rem 3rem 1rem;
+    }
+
+    .footer__paragraph{
+        font-size: 14px;
+    }
+}
